@@ -1,0 +1,11 @@
+{
+  "name": "06_module_wrapper",
+  "version": "1.0.0",
+  "description": "This is 06_wrapper_function folder. I have run a command \"npm init\" in this folder  to initialize npm, so that i can run the command \"npx nodemon\".",
+  "main": "01_wrapper_function.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arnav Umarkar",
+  "license": "ISC"
+}

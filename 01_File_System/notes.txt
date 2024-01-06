@@ -1,0 +1,9 @@
+there is someting called repl
+r => read
+e => eval
+p => pring
+l => loop
+
+
+used for experimenting with language
+we can directly write code in  our terminal
