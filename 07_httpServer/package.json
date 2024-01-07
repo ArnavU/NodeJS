@@ -1,0 +1,13 @@
+{
+  "name": "07_httpserver",
+  "version": "1.0.0",
+  "description": "\"Creating own http server\"",
+  "main": "01_creating_own_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "\"Arnav Umarkar\"",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
