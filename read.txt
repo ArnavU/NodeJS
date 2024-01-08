@@ -1,2 +1,0 @@
-Hi this is my second text
-This is append text.
