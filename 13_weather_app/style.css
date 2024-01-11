@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    border: 2px solid black;
+    height: 80vh;
+    width: 400px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(98, 125, 148);
+    border-radius: 10px;
+
+    /* box-shadow: h-offset v-offset blur spread color; */
+    box-shadow: 8px 8px 7px rgba(38, 37, 37, 0.2)
+}
+
+#weatherIcon {
+    margin: 20%;
+    animation: scaleIcon 2s infinite alternate;
+}
+
+.location {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.location .fas {
+    animation: translateIcon 2s infinite alternate;
+}
+
+.info {
+    position: relative;
+    top: 32%;
+    line-height: 30px;
+    text-align: center;
+    z-index: 101;
+}
+
+.info .temp {
+    position: relative;
+    top : 50%;
+}
+
+.info .tempMinMax {
+    position: relative;
+    top: 50%;
+}
+
+.wave {
+    position: absolute;
+    height: 550px;
+    width: 650px;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    top: 50%;
+}
+
+.wave.-one {
+    /* top: 45%; */
+    left: -100px;
+    background-color: rgba(173, 178, 205, 0.989);
+    animation: drift 4s linear infinite;
+    z-index: 100;
+}
+
+.wave.-two {
+    /* top: 55%; */
+    left: -100px;
+    background-color: rgba(190, 190, 207, 0.6);
+    animation: drift 3.5s linear infinite;
+    z-index: 99;
+}
+
+.wave.-three {
+    top: 50%;
+    left: -150px;
+    background-color: rgba(162, 162, 199, 0.548);
+    animation: drift 3s linear infinite;
+    z-index: 98;    
+
+}
+
+.date, .tempMinMax {
+    color: rgb(41, 39, 39);
+}
+
+
+@keyframes drift{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes scaleIcon {
+    from {
+        transform: scale(3);
+    }
+    to {
+        transform: scale(4);
+    }
+}
+
+@keyframes translateIcon {
+    from {
+        transform: translateX(-20px);
+    }
+    to {
+        transform: translateX(0px)
+    }
+}
+
